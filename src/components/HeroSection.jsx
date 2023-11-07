@@ -1,34 +1,44 @@
 import React from "react";
 import { AiFillCaretDown } from "react-icons/ai";
-import Socials from "./Socials";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+import TypingEffects from "react-typing-writer-effect";
 function HeroSection() {
+  const resumeUrl =
+    "https://docs.google.com/document/d/112y6RJl_nwOeTXNJGUm3pfOOf8RvKe_v/edit?usp=sharing&ouid=114972879594127975030&rtpof=true&sd=true";
+  const githubUrl = " https://github.com/DennisMwauraKA";
+  const linkedinUrl = "https://www.linkedin.com/in/dennis-mwaura-735161228/";
   return (
     <div
-      name="home"
+      name={1}
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="font-bold text-4xl sm:text-7xl text-white">
-            I am a Full Stack developer
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            I have One year Experience building and designing Web applications
-            and Mobile applications. Currently, I love to create mobile
-            applications using technologies such as React native,MongoB,GraphQl
-            and NestJs
-          </p>
-          <div className=" cursor-pointer bg-gradient-to-r from-blue-600 to to-blue-500 w-40 px-4 py-3 my-2 items-center  rounded-md  flex  flex-row">
-            <button className=" group text-white text-xl ">Portfolio</button>
-            <span className="group-hover:rotate-90">
-              <AiFillCaretDown size={22} color="white" className="ml-1"/>
-            </span>
+          <span className="font-bold text-4xl sm:text-7xl text-white">
+            <h2 className="mb-4 ">Am Dennis a Software Developer</h2>
+            <TypingEffects
+              textArray={["I Like developing Softwares,"]}
+              speed={100}
+              size={40}
+            />
+          </span>
+          <div className="flex flex-row gap-2 mt-5  ">
+            <a href={githubUrl}>
+              <FaGithub size={25} color="white" />
+            </a>
+            <a href={linkedinUrl}>
+              <FaLinkedin size={25} color="white" />
+            </a>
+          </div>
+
+          <div className=" cursor-pointer bg-gradient-to-r from-blue-600 to mt-3 to-blue-500 w-40 px-4 py-3 my-2 items-center  rounded-md  flex  flex-row">
+            <a href={resumeUrl} download={"DENNIS MWAURA KARIUKI RESUME.docx"}>
+              <button className=" text-white text-xl ">Resume</button>
+            </a>
           </div>
         </div>
       </div>
-      {/*put picture here*/}
-      <div></div>
-      <Socials/>
     </div>
   );
 }
