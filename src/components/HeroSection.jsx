@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -8,20 +8,17 @@ function HeroSection() {
     "https://docs.google.com/document/d/112y6RJl_nwOeTXNJGUm3pfOOf8RvKe_v/edit?usp=sharing&ouid=114972879594127975030&rtpof=true&sd=true";
   const githubUrl = " https://github.com/DennisMwauraKA";
   const linkedinUrl = "https://www.linkedin.com/in/dennis-mwaura-735161228/";
+
   return (
     <div
       name={1}
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col justify-center ml-5 h-full  md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <span className="font-bold text-4xl sm:text-7xl text-white">
-            <h2 className="mb-4 ">Am Dennis a Software Developer</h2>
-            <TypingEffects
-              textArray={["I Like developing Softwares,"]}
-              speed={100}
-              size={40}
-            />
+            <h2 className="mb-4 ">Hey meet Dennis</h2>
+            <h2 className="mb-4 "> A Full Stack Developer</h2>
           </span>
           <div className="flex flex-row gap-2 mt-5  ">
             <a href={githubUrl}>

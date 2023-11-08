@@ -8,9 +8,9 @@ import mongo from "../assets/galleryicon/mongo.png";
 import nodejs from "../assets/galleryicon/nodejs.png";
 import php from "../assets/galleryicon/php.png";
 import react from "../assets/galleryicon/react.png";
-import tailwind from "../assets/galleryicon/tailwind.png"
-import bootstrap from "../assets/galleryicon/bootstrap.png"
-import postgre from "../assets/galleryicon/postgre.png"
+import tailwind from "../assets/galleryicon/tailwind.png";
+import bootstrap from "../assets/galleryicon/bootstrap.png";
+import postgre from "../assets/galleryicon/postgre.png";
 function Experience() {
   const icon = [
     { id: 1, name: "CSS", src: css, style: "shadow-red-400" },
@@ -41,8 +41,8 @@ function Experience() {
           </p>
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
             {icon.map((tech) => (
-              <div
-                className={`shadow-xl rounded-lg ${tech.style}`}
+              <div className={`shadow-xl rounded-lg ${tech.style}`}
+
               >
                 <img
                   src={tech.src}

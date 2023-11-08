@@ -22,6 +22,7 @@ function Nav() {
     },
   ];
   const [menu, setMenu] = useState(false);
+  
   return (
     <div className="flex justify-between items-center w-full h-14 fixed text-white bg-black px-4 ">
       <div>
