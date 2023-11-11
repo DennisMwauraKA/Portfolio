@@ -4,8 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import TypingEffects from "react-typing-writer-effect";
 function HeroSection() {
-  const resumeUrl =
-    "https://docs.google.com/document/d/112y6RJl_nwOeTXNJGUm3pfOOf8RvKe_v/edit?usp=sharing&ouid=114972879594127975030&rtpof=true&sd=true";
+  const resumeUrl ="https://drive.google.com/file/d/1mvvWpdZBatI-NCs3oTk-SrrBzy2rDCFR/view?usp=sharing";  
   const githubUrl = " https://github.com/DennisMwauraKA";
   const linkedinUrl = "https://www.linkedin.com/in/dennis-mwaura-735161228/";
 
